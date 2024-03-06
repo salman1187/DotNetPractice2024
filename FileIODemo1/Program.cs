@@ -21,13 +21,9 @@ namespace FileIODemo1
             string readLine;
             using (StreamReader reader = new StreamReader("C:\\Users\\MOHAMMAD SALMAN\\Documents\\names.txt"))
             {
-                //while(!reader.EndOfStream)
-                //{
-                //    readLine = reader.ReadToEnd();
-                //    Console.WriteLine(readLine);
-                //}
-
+                readLine = reader.ReadToEnd();
             }
+            
             
         }
     }
