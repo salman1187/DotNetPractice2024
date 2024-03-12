@@ -99,6 +99,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns Demos", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSSystem", "POSSystem\POSSystem.csproj", "{87FE6A67-463A-4371-AAD2-364539583725}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Programming ADO", "Database Programming ADO", "{1B308AD7-F06F-4C14-89C9-C534513235B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsManagement.ConsoleApp", "StudentsManagement.ConsoleApp\StudentsManagement.ConsoleApp.csproj", "{2C998A7F-E4FE-44B8-9C73-6F4838108BEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +249,10 @@ Global
 		{87FE6A67-463A-4371-AAD2-364539583725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87FE6A67-463A-4371-AAD2-364539583725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87FE6A67-463A-4371-AAD2-364539583725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C998A7F-E4FE-44B8-9C73-6F4838108BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C998A7F-E4FE-44B8-9C73-6F4838108BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C998A7F-E4FE-44B8-9C73-6F4838108BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C998A7F-E4FE-44B8-9C73-6F4838108BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +288,7 @@ Global
 		{D9BE80EA-22DA-4B43-9060-1641AEAB7361} = {FD640F8B-3161-4585-96E9-420404DC4C93}
 		{241DEAD4-0BF6-478C-B5CB-693476799737} = {FD640F8B-3161-4585-96E9-420404DC4C93}
 		{87FE6A67-463A-4371-AAD2-364539583725} = {3B043A27-4552-4CF5-8727-66B016320853}
+		{2C998A7F-E4FE-44B8-9C73-6F4838108BEB} = {1B308AD7-F06F-4C14-89C9-C534513235B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A974DDAE-D9F5-4B45-B7B6-C5F5AEAB047F}
