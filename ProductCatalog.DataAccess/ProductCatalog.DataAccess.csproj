@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C6B6F62-9DC1-43B6-800A-0B7719DC2859}</ProjectGuid>
+    <ProjectGuid>{DA2082EB-AAB4-47F8-8FA2-88C801B7F564}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContactManager.Data</RootNamespace>
-    <AssemblyName>ContactManager.Data</AssemblyName>
+    <RootNamespace>ProductCatalog.DataAccess</RootNamespace>
+    <AssemblyName>ProductCatalog.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,7 +42,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,21 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactsDbContext.cs" />
-    <Compile Include="ContactsDBRepository.cs" />
-    <Compile Include="ContactsFileRepository.cs" />
-    <Compile Include="IContactsRepository.cs" />
+    <Compile Include="IProductsRepository.cs" />
+    <Compile Include="ProductsDbContext.cs" />
+    <Compile Include="ProductsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ContactManager.Common\ContactManager.Common.csproj">
-      <Project>{82b27129-4484-4f4f-99c2-61e29c2e00c7}</Project>
-      <Name>ContactManager.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCatalog.Entities\ProductCatalog.Entities.csproj">
+      <Project>{d4a51992-d769-4709-aa78-4bdef858b6e9}</Project>
+      <Name>ProductCatalog.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

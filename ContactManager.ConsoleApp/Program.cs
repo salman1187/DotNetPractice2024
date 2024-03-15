@@ -97,13 +97,15 @@ namespace ContactManager.ConsoleApp
             Console.Write("Location: ");
             c.Location = Console.ReadLine();
 
-            IContactsRepository repository = new ContactsFileRepository(); //wrong //DIP //upper layer should never know concrete classes, they should only talk to interfaces
+            RepositoryFactory factory = RepositoryFactory.Instance;
+            IContactsRepository repository = factory.CreateRepository();//wrong //DIP //upper layer should never know concrete classes, they should only talk to interfaces
             repository.Save(c);
             Console.WriteLine("Contact Saved Successfully");
         }
         public static void GetAllContacts()
         {
-            IContactsRepository repository = new ContactsFileRepository();
+            RepositoryFactory factory = RepositoryFactory.Instance;
+            IContactsRepository repository = factory.CreateRepository();
             List<Contact> contactlist = new List<Contact>();
             contactlist = repository.GetAllContacts();
             Console.WriteLine("All the available contacts: ");
@@ -112,7 +114,8 @@ namespace ContactManager.ConsoleApp
         }
         public static void GetContactbyId()
         {
-            IContactsRepository repository = new ContactsFileRepository();
+            RepositoryFactory factory = RepositoryFactory.Instance;
+            IContactsRepository repository = factory.CreateRepository();
             Console.Write("Enter the ID to get the contact: ");
             int id = int.Parse(Console.ReadLine());
             Contact contact = repository.GetContactbyId(id);
@@ -136,13 +139,15 @@ namespace ContactManager.ConsoleApp
             Console.Write("Location: ");
             c.Location = Console.ReadLine();
 
-            IContactsRepository repository = new ContactsFileRepository();
+            RepositoryFactory factory = RepositoryFactory.Instance;
+            IContactsRepository repository = factory.CreateRepository();
             repository.UpdateContact(c, id);
             Console.WriteLine("Contact edited succesfully");
         }
         public static void DeleteContact()
         {
-            IContactsRepository repository = new ContactsFileRepository();
+            RepositoryFactory factory = RepositoryFactory.Instance;
+            IContactsRepository repository = factory.CreateRepository();
             Console.Write("Enter the ID to get the contact: ");
             int id = int.Parse(Console.ReadLine());
             repository.DeleteContactbyId(id);
