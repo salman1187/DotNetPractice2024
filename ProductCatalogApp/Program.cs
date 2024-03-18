@@ -3,6 +3,7 @@ using ProductCatalog.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
@@ -16,43 +17,68 @@ namespace ProductCatalogApp
     {
         static void Main(string[] args)
         {
-            while(true)
-            {
-                Console.WriteLine("1.Create\n2.Delete\n3.Edit\n4.Get All\n5.Get By Id\n6.Get Cheapest Produt\n7.Get Costliest Product\n8.Get Product Count\n0.Exit ");
-                int c = int.Parse(Console.ReadLine());
-                switch (c)
-                {
-                    case 1:
-                        Create();
-                        break;
-                    case 2:
-                        Delete();
-                        break;
-                    case 3:
-                        Edit();
-                        break;
-                    case 4:
-                        GetAll();
-                        break;
-                    case 5:
-                        GetById();
-                        break;
-                    case 6:
-                        GetCheapest();
-                        break;
-                    case 7:
-                        GetCostliest();
-                        break;
-                    case 8:
-                        GetProductCount();
-                        break;
-                    case 0:
-                        return;
-                    default:
-                        Console.WriteLine("Wrong input");
-                        break;
-                }
-            }
+            //while(true)
+            //{
+            //    Console.WriteLine("1.Create\n2.Delete\n3.Edit\n4.Get All\n5.Get By Id\n6.Get Cheapest Produt\n7.Get Costliest Product\n8.Get Product Count\n0.Exit ");
+            //    int c = int.Parse(Console.ReadLine());
+            //    switch (c)
+            //    {
+            //        case 1:
+            //            Create();
+            //            break;
+            //        case 2:
+            //            Delete();
+            //            break;
+            //        case 3:
+            //            Edit();
+            //            break;
+            //        case 4:
+            //            GetAll();
+            //            break;
+            //        case 5:
+            //            GetById();
+            //            break;
+            //        case 6:
+            //            GetCheapest();
+            //            break;
+            //        case 7:
+            //            GetCostliest();
+            //            break;
+            //        case 8:
+            //            GetProductCount();
+            //            break;
+            //        case 0:
+            //            return;
+            //        default:
+            //            Console.WriteLine("Wrong input");
+            //            break;
+            //    }
+            //}
+            ProductsDbContext db = new ProductsDbContext();
+            //select all products and display product name and category name
+            //var allProducts = from p in db.Products //.Include("Category") //eager loading 
+            //                  select p;
+
+            //foreach (var item in allProducts)
+            //{
+            //    Console.WriteLine($"{item.Name} - {item.Category.Name}");
+            //}
+
+            //add customer and one supplier
+            //Customer c = new Customer { CustType = "Gold", Discount = 12, Email = "cust1@gmail.com", Location = "Hyderabad", Mobile = "97898780", Name = "Customer1" };
+            //Supplier s = new Supplier { Email = "sup1@gmail.com", GST = "A2343", Location = "Bangalore", Mobile = "7889887", Name = "supplier1", TradeLic = "Tx345r2" };
+            //db.People.Add(c);
+            //db.People.Add(s);
+            //db.SaveChanges();   
+            //getting only customers:
+            //var peoples = (from p in db.People
+            //               select p).ToList();
+
+            //foreach(var people in peoples)  
+            //    if(people.GetType() == typeof(Customer))
+            //        Console.WriteLine(people.Name);
+            //or var allCustomers = db.People.OfType<Customer>().ToList(); 
+
         }
         public static void Create()
         {
