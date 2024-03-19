@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieApp.Common\MovieApp.Common.csproj">
+      <Project>{ca9a76d0-e1b6-4036-a2d8-920a0293d3f7}</Project>
+      <Name>MovieApp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieApp.DataLayer\MovieApp.DataLayer.csproj">
+      <Project>{7c4346f8-8c53-48ae-935d-859e998a0dc4}</Project>
+      <Name>MovieApp.DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

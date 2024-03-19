@@ -137,6 +137,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalog.DataAccess", "ProductCatalog.DataAccess\ProductCatalog.DataAccess.csproj", "{DA2082EB-AAB4-47F8-8FA2-88C801B7F564}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsCatalogDBFirstApproach", "ProductsCatalogDBFirstApproach\ProductsCatalogDBFirstApproach.csproj", "{B9B2D520-86E0-4DF3-9663-3D282D76A475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -319,6 +321,10 @@ Global
 		{DA2082EB-AAB4-47F8-8FA2-88C801B7F564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA2082EB-AAB4-47F8-8FA2-88C801B7F564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA2082EB-AAB4-47F8-8FA2-88C801B7F564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B2D520-86E0-4DF3-9663-3D282D76A475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B2D520-86E0-4DF3-9663-3D282D76A475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B2D520-86E0-4DF3-9663-3D282D76A475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B2D520-86E0-4DF3-9663-3D282D76A475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +375,7 @@ Global
 		{D4A51992-D769-4709-AA78-4BDEF858B6E9} = {C361450C-510C-4C7F-A5F4-320033EDB364}
 		{8B722E33-3E3F-40EC-ACD3-89C9178BD693} = {665609A5-C999-4B6F-8544-49075C311F22}
 		{DA2082EB-AAB4-47F8-8FA2-88C801B7F564} = {8B722E33-3E3F-40EC-ACD3-89C9178BD693}
+		{B9B2D520-86E0-4DF3-9663-3D282D76A475} = {1B308AD7-F06F-4C14-89C9-C534513235B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A974DDAE-D9F5-4B45-B7B6-C5F5AEAB047F}

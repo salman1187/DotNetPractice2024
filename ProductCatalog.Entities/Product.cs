@@ -31,6 +31,7 @@ namespace ProductCatalog.Entities
         public string Name { get; set; }
         public virtual List<Product> Products { get; set; } = new List<Product>();  
     }
+    [Table("Suppliers")]
     public class Supplier : Person
     {
         public string GST { get; set; }
@@ -45,9 +46,20 @@ namespace ProductCatalog.Entities
         public string Mobile { get; set; }  
         public string Location { get; set; }
     }
+    [Table("Customers")]
     public class Customer : Person
     {
         public int Discount { get; set; }   
         public string CustType { get; set; }    
+        public Address Address { get; set; }
+    }
+    [ComplexType] // to create only one table for more than one entity classes
+    public class Address
+    {
+        // do not provide id property
+        public string Line1 { get; set; }   
+        public string Line2 { get; set; }   
+        public string City { get; set; }
+        public string PinCode { get; set; }
     }
 }

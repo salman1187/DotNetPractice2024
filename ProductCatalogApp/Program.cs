@@ -79,6 +79,9 @@ namespace ProductCatalogApp
             //        Console.WriteLine(people.Name);
             //or var allCustomers = db.People.OfType<Customer>().ToList(); 
 
+            // !!!
+            db.Database.ExecuteSqlCommand("update products set price = price + 1000"); //instead of iterating through all the records we can do this to improve the performance
+
         }
         public static void Create()
         {
